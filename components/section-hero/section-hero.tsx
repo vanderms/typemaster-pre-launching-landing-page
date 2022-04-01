@@ -20,7 +20,7 @@ export default function SectionHero() {
           </Link>
         </div>
       </header>
-      <picture className="image-container">
+      <picture className="picture">
         <source
           media="(min-width: 1200px)"
           srcSet="/assets/desktop/image-keyboard.jpg"
