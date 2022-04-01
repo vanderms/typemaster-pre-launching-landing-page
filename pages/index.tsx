@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import TopBar from '../components/topbar/topbar';
+import TopBar from '../components/section-topbar/topbar';
+import SectionHero from '../components/section-hero/section-hero';
 
 const Home: NextPage = () => {
   return (
@@ -8,8 +9,10 @@ const Home: NextPage = () => {
       <Head>
         <title>Create Next App</title>
       </Head>
-      <TopBar/>
-      
+      <main>
+        <TopBar />
+        <SectionHero/>
+      </main>
     </>
   );
 };
