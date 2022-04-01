@@ -5,16 +5,31 @@
   display: grid;
   @include container-right;
   grid-template-columns: 107fr 220fr;
-  gap: 24px;
+  column-gap: 24px;
+
+  @include media(tablet) {
+    margin-top: 40px;
+    @include container;
+    grid-template-columns: 214fr 445fr;
+    column-gap: 30px;
+  }
 
   .picture {
     width: 100%;
     height: 193px;
     overflow: hidden;
 
+    @include media(tablet) {
+      height: 320px;
+    }
+
     &:first-of-type {
       background: #f16718;
       border-radius: 0px 20px 20px 0px;
+
+      @include media(tablet) {
+        border-radius: 20px;
+      }
 
       .image {
         opacity: 0.75;
@@ -24,6 +39,10 @@
 
     &:last-of-type {
       border-radius: 20px;
+
+      @include media(tablet) {
+        margin-top: 15px;
+      }
     }
 
     .image {
@@ -39,6 +58,14 @@
     @include container-left;
     margin-top: 75px;
 
+    @include media(tablet) {
+      display: flex;
+      justify-content: space-between;
+      gap: 36px;
+      margin-left: 0;
+      margin-top: 57px;
+    }
+
     .title {
       font-weight: 900;
       font-size: 32px;
@@ -48,15 +75,26 @@
       color: #162542;
       max-width: 255px;
       margin-inline: auto;
+
+      @include media(tablet) {
+        text-align: left;
+        width: 255px;
+      }
     }
 
     .text {
       margin-top: 24px;
       font-weight: 500;
       font-size: 16px;
-      line-height: 26px;     
+      line-height: 26px;
       text-align: center;
       color: #7b8bad;
+
+      @include media(tablet) {
+        margin-top: 0;
+        width: 398px;
+        text-align: left;
+      }
     }
   }
 }
