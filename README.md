@@ -11,5 +11,5 @@ This is my solution to the challenge [Typemaster pre-launch landing page](https:
 
 ### Links
 
-- Solution URL: 
-- Live Site URL: 
+- Solution URL: <https://www.frontendmentor.io/solutions/nextjs-typescript-scss-Bkg1klBQ9>
+- Live Site URL: <https://stellar-blini-0a0419.netlify.app/>
