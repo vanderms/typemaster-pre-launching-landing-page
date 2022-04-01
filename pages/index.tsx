@@ -7,11 +7,17 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="./assets/favicon-32x32.png"
+        />
+        <title>Frontend Mentor | Typemaster pre-launch landing page</title>
       </Head>
       <main>
         <TopBar />
-        <SectionHero/>
+        <SectionHero />
       </main>
     </>
   );
