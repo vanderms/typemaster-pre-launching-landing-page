@@ -4,13 +4,25 @@
   margin-top: 111px;
   @include container;
   display: grid;
+  justify-items: center;
   gap: 64px;
+
+  @include media(tablet) {
+    grid-template-columns: 281px 281px;
+    justify-items: start;
+    gap: 72px 69px;
+  }
 }
 
 .nv-card-feature {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 281px;
+
+  @include media(tablet){
+    align-items: flex-start;
+  }
 
   .icon-container {
     width: 65px;
@@ -29,6 +41,11 @@
     text-transform: uppercase;
     color: #162542;
     margin-top: 48px;
+
+    @include media(tablet){
+      margin-top: 40px;
+      text-align: left;
+    }
   }
 
   .text {
@@ -38,5 +55,9 @@
     line-height: 26px;
     text-align: center;
     color: #7b8bad;
+
+    @include media(tablet){
+      text-align: left;
+    }
   }
 }
