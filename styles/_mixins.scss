@@ -1,0 +1,46 @@
+@use 'sass:map';
+@use 'sass:math';
+
+//media query
+$breakpoints: (
+  mobile: 350px,
+  tablet: 720px,
+  laptop: 1200px,
+  desktop: 1520px,
+);
+
+@mixin media($size) {
+  $breakpoint: map.get($breakpoints, $size);
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin container-left {
+  margin-left: 6.4vw;
+
+  @include media(tablet) {
+    margin-left: 5.078125vw;
+  }
+
+  @include media(laptop){
+    margin-left: calc(50vw - 550px);
+  }
+}
+
+@mixin container-right {
+  margin-right: 6.4vw;
+
+  @include media(tablet) {
+    margin-right: 5.2083333vw;
+  }
+
+  @include media(laptop){
+    margin-right: calc(50vw - 550px);
+  }
+}
+
+@mixin container {
+  @include container-left();
+  @include container-right();
+}

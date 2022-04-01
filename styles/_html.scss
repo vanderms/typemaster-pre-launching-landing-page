@@ -1,0 +1,30 @@
+@use './mixins' as *;
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;700;900&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: inherit; 
+  font-family: 'Barlow', sans-serif;
+  font-weight: 500;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+address {
+  font-style: normal;
+}
