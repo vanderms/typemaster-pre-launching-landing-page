@@ -22,6 +22,7 @@ const Home: NextPage = () => {
         <SectionHero />
         <SectionProduct/>
         <SectionFeatures/>
+        <footer className='footer'><strong>Typemaster 2021</strong> | All Rights Reserved</footer>        
       </main>
     </>
   );

@@ -12,6 +12,13 @@
     justify-items: start;
     gap: 72px 69px;
   }
+
+  @include media(laptop){
+    grid-template-columns: repeat(4, 255px);
+    gap: 0;
+    justify-content: space-between;
+    margin-top: 168px;
+  }
 }
 
 .nv-card-feature {
@@ -45,6 +52,10 @@
     @include media(tablet){
       margin-top: 40px;
       text-align: left;
+    }
+
+    @include media(laptop){
+      margin-top: 48px;
     }
   }
 
