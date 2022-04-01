@@ -3,8 +3,22 @@
 .nv-section-hero {
   padding-top: 64px;
 
+  @include media(tablet){
+    display: grid;
+    grid-template-columns: 339px 1fr;
+    gap: 69px;
+    padding-top: 62px;
+  }
+
   .header {
     @include container;
+    
+    @include media(tablet){
+      margin-right: 0;
+      margin-top: 60px;
+      width: 100%;
+    }
+
 
     .title {
       font-weight: 900;
@@ -20,6 +34,10 @@
       font-size: 16px;
       line-height: 26px;
       color: #7b8bad;
+
+      @include media(tablet){
+        margin-top: 34px;
+      }
     }
 
     .cta-links {
@@ -27,6 +45,11 @@
       display: flex;
       gap: 32px;
       align-items: center;
+
+      @include media(tablet){
+        margin-top: 39px;
+        gap: 37px;
+      }
     }
 
     .cta-primary {
@@ -39,6 +62,10 @@
       padding: 11px 14px;
       background: #f16718;
       border-radius: 8px;
+
+      @include media(tablet){
+        padding: 16px 27px 16px 26px;
+      }
 
       &:hover {
         background: #ff9b62;
@@ -60,6 +87,11 @@
     @include container-left;
     height: 331px;
     position: relative;
+
+    @include media(tablet){
+      margin: 0;
+      height: 425px;
+    }
 
     .image {
       position: absolute;
