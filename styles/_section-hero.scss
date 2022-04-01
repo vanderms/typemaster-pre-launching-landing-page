@@ -1,0 +1,73 @@
+@use './mixins' as *;
+
+.nv-section-hero {
+  padding-top: 64px;
+
+  .header {
+    @include container;
+
+    .title {
+      font-weight: 900;
+      font-size: 48px;
+      line-height: 48px;
+      text-transform: uppercase;
+      color: #162542;
+    }
+
+    .description {
+      margin-top: 32px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      color: #7b8bad;
+    }
+
+    .cta-links {
+      margin-top: 32px;
+      display: flex;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .cta-primary {
+      text-align: center;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 26px;
+      text-transform: uppercase;
+      color: #ffffff;
+      padding: 11px 14px;
+      background: #f16718;
+      border-radius: 8px;
+
+      &:hover {
+        background: #ff9b62;
+      }
+    }
+
+    .cta-secondary {
+      text-align: center;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 26px;
+      text-transform: uppercase;
+      color: #7b8bad;
+    }
+  }
+
+  .image-container {
+    margin-top: 64px;
+    @include container-left;
+    height: 331px;
+    position: relative;
+
+    .image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 20px 0px 0px 20px;
+    }
+  }
+}
